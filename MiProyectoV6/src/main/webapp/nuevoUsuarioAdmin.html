@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>NuevoUsuario</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<script src="JS/usuarios.js"></script>
+</head>
+
+<body>
+	<div id="contenedor">
+		<header>
+			<div id="contenedorBanner">
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index1.html">Inicio</a>
+				<li><a href="ofertas.html">Ofertas del Mes</a>
+				<li><a href="catalogo.html">Catálogo de Productos</a>
+				<li><a href="sesionAdmin.html">Mi Sesión</a></li>
+				<li>ADMINISTRADOR - Bienvenido</li>
+			</ul>
+		</nav>
+		<section>
+			<h2> NUEVO USUARIO </h2>
+			<p class="p1"> Rellena el siguiente formulario </p>
+			<form method="post" name="NuevoUsuario" action="GestionUsuarios" id="altas">
+				<ul>
+					<input type="hidden" id="id" name="id">
+					<li><label>Nombre </label> <input id="nombre" type="text" name="nombre"></li>
+					<li><label>Apellidos </label><input id="apellidos" type="text" name="apellidos"></li>
+					<li><label>Teléfono </label><input id="telefono" type="text" name="telefono"></li>
+					<li><label>Email </label><input id="email" type="text" name="email"></li>
+					<li><label>Tipo </label><select name="permiso">
+							<option value="1">...</option>
+							<option value="1">Usuario Cliente</option>
+							<option value="9">Usuario Administrador</option>
+						</select></li>
+					<li><label>Contraseña </label><input id="contrasena" type="text" name="contrasena"></li>
+					<li><label>Confirmar Contraseña </label><input id="contrasena2" type="text" name="contrasena2"></li>
+					<li><input type="button" onclick="validarFormulario()" value="ENVIAR" id="boton"></li>
+				</ul>
+			</form>
+		</section>
+		<aside>
+			<div class="cajaOpciones">
+				<h3>Opciones</h3>
+				<p>&nbsp;</p>
+
+				<div class="op2"><a href="listaProducto.html">Listado de Productos</a></div>
+				<div class="op2"><a href="altaProductos.html">Agregar Producto</a></div>
+				<div class="op2"><a href="listaUsuarios.html">Lista de Usuarios</a></div>
+				<div class="op2"><a href="nuevoUsuario.html">Agregar Usuario</a></div>
+				<div class="op2"><a href="index1.html">Cerrar Sesión</a></div>
+				<p>&nbsp;</p>
+			</div>
+		</aside>
+		<footer>
+			<nav id="footer">
+				<ul id="footer-lista">
+					<li><a href="underConstruction.html">Redes Sociales</a>
+					<li><a href="underConstruction.html">Suscribirse al Newsletter</a>
+					<li><a href="underConstruction.html">Contacto</a>
+					<li><a href="underConstruction.html">Trabaja con Nosotros</a>
+					<li><a href="underConstruction.html">Aviso Legal</a>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+
+</html>

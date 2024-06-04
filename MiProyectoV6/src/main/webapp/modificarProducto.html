@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Modificar Producto</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<script src="JS/productos.js"></script>
+</head>
+
+<body>
+	<div id="contenedor">
+		<header>
+			<div id="contenedorBanner">
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index1.html">Inicio</a></li>
+				<li><a href="ofertas.html">Ofertas del Mes</a></li>
+				<li><a href="catalogo.html">Catálogo de Productos</a></li>
+				<li><a href="sesionAdmin.html">Mi Sesión</a></li>
+				<li>ADMINISTRADOR - Bienvenido</li>
+			</ul>
+		</nav>
+		<section>
+			<h2> Modificar Producto </h2>
+			<!--Formulario de alta de producto que enlaza a la bbdd-->
+			<form method="post" id="altas" name="ModificarProductos" action="GestionProductos"
+				enctype="multipart/form-data" onsubmit="validarFormulario()">
+				<ul>
+					<input type="hidden" id="cod_producto" name="cod_producto">
+					<li><label>Tipo </label><select name="tipo" id="tipo">
+							<option value="1">Fármaco</option>
+							<option value="2">Equipos Médicos</option>
+							<option value="3">Insumos</option>
+						</select></li>
+					<li><label>Nombre </label><input type="text" name="nombre" id="nombre"></li>
+					<li><label>Presentación </label><input type="text" name="presentacion" id="presentacion"></li>
+					<li><label>Detalles </label><textarea name="detalles" id="detalles"></textarea></li>
+					<li><label>Proveedor </label><input type="text" name="proveedor" id="proveedor"></li>
+					<li><label>Precio </label><input type="int" name="precio_uni" id="precio_uni"></li>
+					<li><label>Foto </label><input type="file" name="foto" id="foto"></li>
+					<li><input type="submit" value="ENVIAR" id="boton"></li>
+				</ul>
+			</form>
+		</section>
+		<aside>
+			<div class="cajaOpciones">
+                <h3>Opciones</h3>
+                <p>&nbsp;</p>
+                    <div class="op2"><a href="listaProducto.html">Listado de Productos</a></div>
+                    <div class="op2"><a href="altaProductos.html">Agregar Producto</a></div>
+                    <div class="op2"><a href="listaUsuarios.html">Lista de Usuarios</a></div>
+                    <div class="op2"><a href="nuevoUsuario.html">Agregar Usuario</a></div>
+               		<div class="op2"><a href="index1.html">Cerrar Sesión</a></div>
+                <p>&nbsp;</p>
+                </div>
+            </aside>
+		<footer>
+			<nav id="footer">
+				<ul id="footer-lista">
+					<li><a href="underConstruction.html">Redes Sociales</a>
+					<li><a href="underConstruction.html">Suscribirse al Newsletter</a>
+					<li><a href="underConstruction.html">Contacto</a>
+					<li><a href="underConstruction.html">Trabaja con Nosotros</a>
+					<li><a href="underConstruction.html">Aviso Legal</a>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+
+</html>

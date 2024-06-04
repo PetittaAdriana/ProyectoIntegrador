@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Catalogo de Productos</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<script src="JS/catalogo.js"></script>
+</head>
+
+<body>
+	<div id="contenedor">
+		<header>
+			<div id="contenedorBanner">
+				<!--<img src="img/Pharma.jpg" alt="BannerPharma">-->
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index1.html">Inicio</a></li>
+				<li><a href="ofertas.html">Ofertas del Mes</a></li>
+				<li><a href="catalogo.html">Catálogo de Productos</a></li>
+				<li><a href="underConstruction.html">Carrito</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</nav>
+		<section>
+			<a href="catalogo.html">
+				<h2> Lista de Productos </h2>
+			</a>
+			<!--<a href="GestionProductos?op=1">Ejecuta Lista</a>-->
+			<form name="Listado" method="get" action="GestionProductos?op=1&op=4">
+				<label>Selecciona: </label>
+				<select name="tipoProducto" onchange="busquedaPorTipo(this.value)">
+					<option>...</option>
+					<option value="1">Fármacos</option>
+					<option value="2">Equipos Médicos</option>
+					<option value="3">Insumos</option>
+				</select>
+			</form>
+			<div id="resultados">
+			</div>
+		</section>
+		
+		<footer>
+			<nav id="footer">
+				<ul id="footer-lista">
+					<li><a href="underConstruction.html">Redes Sociales</a>
+					<li><a href="underConstruction.html">Suscribirse al Newsletter</a>
+					<li><a href="underConstruction.html">Contacto</a>
+					<li><a href="underConstruction.html">Trabaja con Nosotros</a>
+					<li><a href="underConstruction.html">Aviso Legal</a>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+
+</html>

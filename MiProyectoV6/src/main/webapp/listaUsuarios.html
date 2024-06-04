@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ListaUsuarios</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<script src="JS/listaUsuario.js"></script>
+</head>
+
+<body>
+	<div id="contenedor">
+		<header>
+			<div id="contenedorBanner">
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index1.html">Inicio</a></li>
+				<li><a href="ofertas.html">Ofertas del Mes</a></li>
+				<li><a href="catalogo.html">Catálogo de Productos</a></li>
+				<li><a href="sesionAdmin.html">Mi Sesión</a></li>
+				<li>ADMINISTRADOR - Bienvenido</li>
+			</ul>
+		</nav>
+		<section id="section2">
+			<a href="listaUsuarios.html">
+				<h2> Lista de Usuarios </h2>
+			</a>
+			<!--<a href="GestionUsuarios?op=1">Ejecuta Lista</a>-->
+			<form name="Listado" method="get" action="GestionUsuarios?op=1&op=4">
+				<label>Selecciona: </label>
+				<select name="tipoUsuario" onchange="busquedaPorTipo(this.value)">
+					<option value="0">...</option>
+					<option value="1">Usuarios Cliente</option>
+					<option value="9">Administrador</option>
+				</select>
+			</form>
+			<div id="listado">
+			</div>
+		</section>
+		<footer>
+			<nav id="footer">
+				<ul id="footer-lista">
+					<li><a href="underConstruction.html">Redes Sociales</a>
+					<li><a href="underConstruction.html">Suscribirse al Newsletter</a>
+					<li><a href="underConstruction.html">Contacto</a>
+					<li><a href="underConstruction.html">Trabaja con Nosotros</a>
+					<li><a href="underConstruction.html">Aviso Legal</a>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+
+</html>
+

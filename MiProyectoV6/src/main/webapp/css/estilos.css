@@ -1,0 +1,596 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* comunes  */
+
+#contenedor {
+	padding: 5px;
+	width: 95%; /* Porcentaje del ancho de la pantalla */
+	max-width: 960px; /* Ancho máximo en píxeles */
+	margin: 20px auto;
+}
+
+/* Estilos para la zona de header*/
+header {
+	height: 180px;
+	border: 1px solid rgb(232, 232, 232);
+	margin-bottom: 15px;
+	background-image: url('../img/Pharma.jpg');
+	background-size: cover; /* La imagen se ajustará para cubrir completamente el contenedor */
+	background-position: center; /* Centra la imagen */
+}
+
+h2 {
+	padding: 4px;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+.p1 {
+	padding: 2px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+form[name="Listado"] select[name="tipoUsuario"] {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+form[name="Listado"] select[name="tipoProducto"] {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+nav {
+	width: 100%;
+	overflow: hidden;
+	border-radius: 1em;
+	margin-bottom: 10px;
+}
+
+nav ul {
+	background-color: rgb(9, 78, 0);
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav ul li {
+	display: flex;
+	margin-top: 5px;
+	color: rgb(170, 255, 170);
+}
+
+nav ul li a {
+	color: white;
+	display: block;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background: rgb(21, 170, 73);
+}
+
+#section {
+	border: 1px;
+	width: 95%;
+	/* Porcentaje del ancho de la pantalla */
+	max-width: 650px;
+	/* Ancho máximo en píxeles */
+	margin-top: 15px;
+	float: left;
+}
+
+section {
+	border: 1px;
+	width: 95%;
+	/* Porcentaje del ancho de la pantalla */
+	max-width: 650px;
+	/* Ancho máximo en píxeles */
+	margin-top: 15px;
+	float: left;
+}
+
+#section2 {
+	border: 1px;
+	width: 95%;
+	/* Porcentaje del ancho de la pantalla */
+	max-width: 940px;
+	/* Ancho máximo en píxeles */
+	margin-top: 15px;
+	float: left;
+}
+
+section3 {
+	border: 1px;
+	width: 95%;
+	/* Porcentaje del ancho de la pantalla */
+	/* Ancho máximo en píxeles */
+	margin-top: 15px;
+	float: left;
+}
+
+.opciones {
+	text-align: left;
+	margin-left: 35px;
+	color: black;
+	width: 85%;
+	padding: 0;
+}
+
+.opciones3 div {
+	width: 115px;
+	text-align: center;
+	padding: 22px;
+	float: left;
+}
+
+.opciones {
+	text-align: left;
+	margin-left: 35px;
+	color: black;
+	width: 85%;
+	padding: 0;
+}
+
+.opciones3 div {
+	width: 115px;
+	text-align: center;
+	padding: 22px;
+	float: left;
+}
+
+#contenedorFotos {
+	max-width: 100%;
+	margin: auto;
+	border: rgb(0, 64, 38);
+	overflow: auto;
+}
+
+#contenedorFotos img {
+	margin: 4px;
+	float: left;
+}
+
+#contenedorFotos2 {
+	width: 95%; /* Porcentaje del ancho de la pantalla */
+	max-width: 100%;
+	margin: auto;
+	border: rgb(0, 64, 38);
+	overflow: auto;
+}
+
+#contenedorFotos2 img {
+	padding-left: 30px;
+	margin: 3px;
+	width: 40%;
+	height: auto;
+}
+
+#contenedorFotos2 img:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	margin: 1px;
+	border: 2px solid #096;
+}
+
+#contenedorFotos3 {
+	padding-left: 0px;
+	margin: 3px;
+	height: auto;
+	flex-wrap: wrap;
+  	justify-content: space-around;
+  	display: flex;
+}
+
+#contenedorFotos3 img{
+	padding-left: 0px;
+	margin: 3px;
+	height: auto;
+}
+
+#resultados {
+	width: 960px;
+	display: flex; 	/* Hacer que los productos se muestren en línea */
+	flex-wrap: wrap; /* Permitir que los productos se envuelvan en varias líneas si es necesario */
+	justify-content: space-around; 	/* Distribuir los productos uniformemente horizontalmente */
+}
+
+#listado {
+	display: flex; /* Hacer que los productos se muestren en línea */
+	flex-wrap: wrap; /* Permitir que los productos se envuelvan en varias líneas si es necesario */
+	justify-content: space-around; /* Distribuir los productos uniformemente horizontalmente */
+}
+
+#listado img {
+	width: 35%;
+}
+
+.producto {
+	border: 1px solid rgb(192, 192, 192);
+	margin: 5px auto;
+	text-align: center;
+	float: left;
+	border-radius: 5px;
+	padding: 7px;
+}
+
+.producto p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 5px;	font-size: 14px;
+	flex: 1 1 auto
+}
+
+.formulario {
+	width: 95%;
+	max-width: 400px;
+	margin: auto;
+	overflow: hidden;
+	height: auto;
+	background-color: burlywood;
+}
+
+form ul {
+	list-style: none;
+	padding: 15px;
+	float: left;
+}
+
+form li {
+	margin: 15px;
+}
+
+table {
+	margin-top: 40px;
+	margin-left: 40px;
+	padding: 2px;
+	width: 95%; 
+	max-width: 100%;
+	margin: 20px auto;
+}
+
+table td {
+	margin-left: 20px;
+	text-align: left;
+	border: 1px solid rgb(192, 192, 192);
+	padding: 4px;
+}
+
+table img {
+	width: 60%;
+	height: auto;
+}
+
+label {
+	font-weight: bold;
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+	margin-right: 30px;
+}
+
+input[type="int"] {
+	border-radius: 10px;
+	padding: 10px;
+}
+
+input[type="int"]:focus {
+	background-color: rgb(208, 250, 214);
+}
+
+input[type="text"] {
+	border-radius: 10px;
+	padding: 10px;
+}
+
+input[type="text"]:focus {
+	background-color: rgb(208, 250, 214);
+}
+
+#boton {
+	margin-left: 450px;
+}
+
+
+.botones {
+		margin-right: 110px;
+		margin-left: 110px;
+		display: flex;
+		justify-content: space-between;
+}
+
+aside {
+	width: 300px;
+	float: right;
+	margin-top: 15px;
+	text-align: initial;
+}
+
+.op2 {
+	margin-bottom: 15px;
+	border-radius: 10px;
+	background-color: rgb(176, 225, 184);
+	padding: 20px;
+	text-align: center;
+}
+
+/* Estilo que solo se aplicará al primer elemento  de la caja */
+.cajaArticulo :first-child {
+	text-decoration: underline;
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 4px;
+	color: #17832d;
+}
+
+footer {
+	padding: 5px;
+	background-color: initial;
+}
+
+footer ul {
+	width: 97%;
+	text-align: center;
+	float: left;
+	margin-top: 30px;
+	list-style: none;
+	padding: 5px;
+	background-color: initial;
+	border: 2px solid #CCC;
+	border-radius: 10px;
+}
+
+footer ul li {
+	text-align: center;
+	float: left;
+	padding: 0;
+	background-color: initial;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer ul li a {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+	color: #193266;
+	padding: 0;
+	font-weight: bold;
+	background-color: initial;
+}
+
+footer ul li a:hover {
+	background: initial;
+}
+
+/* Estilos para pantallas de tablets */
+@media only screen and (max-width: 768px) {
+
+	/* Reducir el ancho del contenedor */
+	#contenedor {
+		width: 90%;
+		font-size: 75%;
+	}
+	/* Reducir la altura del encabezado */
+	header {
+		height: 100px;
+	}
+
+	section {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	
+	/* Reducir el ancho de la seccion2 */
+	section2 {
+		width: 90%;
+		margin-bottom: 15px;
+	}
+
+	/* Reducir el ancho máximo del formulario */
+	.formulario {
+		max-width: 768px;
+	}
+
+	form ul {
+		float: left;
+		padding: 15px;
+	}
+
+	label {
+		font-weight: bold;
+		width: 100%;
+		float: left;
+		text-align: left;
+	}
+
+	#boton {
+		margin-top: 15px;
+		margin-left: 0px;
+	}
+
+	/* Reducir el ancho máximo de la tabla */
+	table {
+		max-width: 95%;
+	}
+
+	form[name="Listado"] select[name="tipoUsuario"] {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+
+	form[name="Listado"] select[name="tipoProducto"] {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+
+	#contenedorFotos img {
+		float: left;
+		width: 46%;
+		margin: 3px;
+	}
+
+	#contenedorFotos2 img {
+		padding-left: 10px;
+		margin: 3px;
+		width: 40%;
+		height: auto;
+	}
+	
+	#contenedorFotos3 img {
+		width: 80%;
+		height: auto;
+	}
+	
+	#contenedor aside {
+		float: left;
+		margin-left: 15px;
+		width: 90%;
+		text-align: center;
+	}
+
+	#resultados {
+		width: 100%;
+		margin-bottom: 15px;
+		display: flex; 	/* Hacer que los productos se muestren en línea */
+		flex-wrap: wrap; /* Permitir que los productos se envuelvan en varias líneas si es necesario */
+		justify-content: space-around; 	/* Distribuir los productos uniformemente horizontalmente */
+	}
+
+	/* Establecer el ancho al 80% */
+	#resultados img {
+		width: 80%;
+		height: auto;
+	}
+
+	/* Establecer el ancho al 80% */
+	#listado img {
+		width: 80%;
+		height: auto;
+	}
+
+	footer ul {
+		font-size: 70%;
+	}
+
+}
+
+/*Estilos para pantallas de mçoviles*/
+@media only screen and (max-width: 480px) {
+
+	/* Reducir el ancho del contenedor */
+	#contenedor {
+		width: 90%;
+	}
+
+	header {
+		height: 80px;
+		/* Reducir la altura del encabezado */
+	}
+
+	section {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	/* Reducir el ancho de la seccion2 */
+	section2 {
+		width: 90%;
+		margin-bottom: 15px;
+	}
+	
+	/* Reducir el ancho máximo del formulario */
+	.formulario {
+		max-width: 300px;
+	}
+
+	form ul {
+		float: left;
+		padding: 15px;
+		width: 100%;
+	}
+
+	label {
+		font-weight: bold;
+		width: 100%;
+		float: left;
+		text-align: left;
+	}
+
+	#boton {
+		margin-top: 15px;
+		margin-left: 0px;
+	}
+
+	/* Reducir el ancho máximo de la tabla */
+	table {
+		max-width: 95%;
+	}
+
+	form[name="Listado"] select[name="tipoUsuario"] {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+
+	form[name="Listado"] select[name="tipoProducto"] {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+
+	#contenedorFotos img {
+		float: left;
+		width: 46%;
+		margin: 3px;
+	}
+
+	#contenedorFotos2 img {
+		padding-left: 10px;
+		margin: 3px;
+		width: 40%;
+		height: auto;
+	}
+
+	#contenedor aside {
+		float: left;
+		margin-left: 15px;
+		width: 90%;
+		text-align: center;
+	}
+
+	#resultados {
+		width: 100%;
+		margin-bottom: 15px;
+		display: flex; 	/* Hacer que los productos se muestren en línea */
+		flex-wrap: wrap; /* Permitir que los productos se envuelvan en varias líneas si es necesario */
+		justify-content: space-around; 	/* Distribuir los productos uniformemente horizontalmente */
+	}
+
+	/* Establecer el ancho al 80% */
+	#resultados img {
+		width: 80%;
+		height: auto;
+	}
+
+	/* Establecer el ancho al 80% */
+	#listado img {
+		width: 80%;
+		height: auto;
+	}
+
+	footer ul {
+		font-size: 70%;
+	}
+
+}
